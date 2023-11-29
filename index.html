@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PelisClub+</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- encabezado -->
+    <header>
+        <div class="navbar">
+            <div class="menu-btn">&#9776;</div>
+            <h1>PelisClub+</h1>
+            <div class="search-icon" id="searchIcon" onclick="toggleSearch()">🔍</div>
+        </div>
+     
+    </header>
+
+
+    <div class="background"></div>
+
+    <!-- Menu lateral -->
+    <div class="side-menu">
+        <div class="menu-header">
+            <h2>Menú</h2>
+            <div class="close-btn">❎</div>
+
+        </div>
+    </div>
+    <!-- busqueda -->
+     
+    <div class="search-container" id="searchContainer">
+        <input type="text" id="searchInput" placeholder="Ingrese nombre de la pelicula...">
+        <button id="searchSubmit" onclick="submitSearch()">Buscar</button>
+  </div>
+ 
+  <div class="instrucciones">
+      <p> atencion: esta pagina es un proyecto sin anuncios los enlaces contenidos en esta pagina han sido encontrados en linea por terceros.
+      instrucciones: esta pagina no contiene anucios pero los enlaces de video encontrados si, se recomienda usar un bloqueador de anuncios y evitar descargar cualquier archivo de las paginas de tercero de los reproductores.
+     </p>
+   </div>
+
+
+
+ 
+
+    <div class="image-container">
+    <div class="image-box">
+        <img src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" alt="Interestelar">
+        <p class="image-caption">Interestelar</p>
+    </div>
+    
+    <div class="image-box">
+        <img src="https://pics.filmaffinity.com/geostorm-475853429-large.jpg" alt="Geo-tormenta">
+        <p class="image-caption">Geo-tormenta</p>
+    </div>
+    
+    <div class="image-box">
+        <img src="https://pics.filmaffinity.com/Polar_Express_El_Expreso_Polar-375183738-large.jpg" alt="El expreso polar">
+        <p class="image-caption">El expreso polar</p>
+    </div>
+
+    <div class="image-box">
+        <img src="https://pics.filmaffinity.com/Spider_Man_No_Way_Home-642739124-large.jpg" alt="Spider-Man: No Way Home">
+        <p class="image-caption">Spider-Man: No Way Home</p>
+    </div>
+
+    <div class="image-box">
+        <img src="https://filmartgallery.com/cdn/shop/products/Spider-Man-Vintage-Movie-Poster-Original-1-Sheet-27x41_0ef2698f-c3c7-49e6-bf21-63bd41f52727.jpg?v=1666894838" alt="Spider-Man">
+        <p class="image-caption">Spider-Man</p>
+    </div>
+
+    <div class="image-box">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_FMjpg_UX1000_.jpg" alt="Iron Man">
+        <p class="image-caption">Iron Man</p>
+    </div>
+
+    
+    <div class="image-box">
+        <img src="https://m.media-amazon.com/images/I/61dC4+N3+0L._AC_UF1000,1000_QL80_.jpg" alt="Iron man 2">
+        <p class="image-caption">Iron man 2</p>
+    </div>
+    
+    <div class="image-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwyxmFvg_acWNhI6PSOLhGoNkD6Ww8d4dgtQ&usqp=CAU" alt="El viaje de chihiro">
+        <p class="image-caption">El viaje de chihiro</p>
+    </div>
+   
+    <div class="image-box">
+        <img src="https://pics.filmaffinity.com/Moonfall-138176660-large.jpg" alt="Moonfall">
+        <p class="image-caption">Moonfall</p>
+    </div>
+    
+    <div class="image-box">
+        <img src="https://es.web.img3.acsta.net/pictures/15/05/05/11/56/026812.jpg" alt="Terremoto: La Falla De San Andrés">
+        <p class="image-caption">Terremoto: La Falla De San Andrés</p>
+    </div>
+    
+    <div class="image-box">
+        <img src="https://www18.pelisplushd.lat/poster/five-nights-at-freddys.jpg" alt="Five Nights at Freddy's">
+        <p class="image-caption">Five Nights at Freddy's</p>
+    </div>
+    
+    <div class="image-box">
+        <img src="https://www18.pelisplushd.lat/poster/ad-astra-hacia-las-estrellas.jpg" alt="Ad Astra: Hacia las estrellas">
+        <p class="image-caption">Ad Astra: Hacia las estrellas</p>
+    </div>
+    
+    <div class="image-box">
+        <img src="https://www18.pelisplushd.lat/poster/see-you-on-venus.jpg" alt="Te esperaré en venus">
+        <p class="image-caption">Te esperaré en venus</p>
+    </div>
+    
+    <div class="image-box">
+        <img src="https://www18.pelisplushd.lat/poster/sword-art-online-progressive-aria-de-una-noche-sin-estrellas.jpg" alt="Sword Art Online Progressive: Aria de una noche sin estrellas">
+        <p class="image-caption"></p>
+    </div>
+    
+    <div class="image-box">
+        <img src="https://www18.pelisplushd.lat/poster/la-cabana.jpg" alt="La cabaña">
+        <p class="image-caption">La cabaña</p>
+    </div>
+    
+    <div class="image-box">
+        <img src="https://www18.pelisplushd.lat/poster/adolescentes.jpg" alt="Adolescentes">
+        <p class="image-caption">Adolescentes</p>
+    </div>
+    
+    <div class="image-box">
+        <img src="https://www18.pelisplushd.lat/poster/fantasma-de-verano.jpg" alt="Fantasma de Verano">
+        <p class="image-caption">Fantasma de Verano</p>
+    </div>
+    
+    <div class="image-box">
+        <img src="https://www18.pelisplushd.lat/poster/battlefield-2025.jpg" alt="Battlefield 2025">
+        <p class="image-caption">Battlefield 2025</p>
+    </div>
+    
+    <div class="image-box">
+      <a href="">
+        <img src="https://www18.pelisplushd.lat/poster/free-guy-tomando-el-control.jpg" alt="Free Guy: Tomando el control">
+        <p class="image-caption">Free Guy: Tomando el control</p>
+      </a>
+    </div>
+    
+    <div class="image-box">
+        <a href="noche-sin-àz/noche-sin-paz.html"> 
+            <img src="https://www18.pelisplushd.lat/poster/noche-sin-paz.jpg" alt="Noche sin paz">
+            <p class="image-caption">Noche sin paz</p>
+        </a>
+    </div>
+    
+
+ 
+  
+  <script src="script.js"></script>
+</body>
+</html>
