@@ -349,5 +349,9 @@ display: none;
        
         display: none;
     }
-    
+    .video {
+        display: none;
+        width: 80%; /* Ocupa todo el ancho disponible */
+        margin: 10px; /* Añade un poco de espacio alrededor del reproductor */
+    }
 }
