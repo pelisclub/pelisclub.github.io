@@ -119,12 +119,8 @@ h1 {
     z-index: 2;
     top:5 ;
 }
-@media screen and (max-width: 600px) {
-    .image-box {
-        width: 100%;
-        height: 100%; /* Ajusta el ancho para mostrar solo 2 imágenes horizontalmente en pantallas pequeñas */
-    }
-}
+
+
 .image-box img {
     width: 100%;
     border-radius: 10px;
@@ -160,6 +156,13 @@ h1 {
     position: relative;
     top: 30px;
 margin-left: 90px;
+display: block;
+}
+.video-cel {
+    padding: 10px;
+    position: relative;
+
+display: none;
 }
 
 
@@ -187,7 +190,7 @@ margin-left: 90px;
     margin-top: -730px;
     text-align: right;
     width: 96%;
-   
+    display: block;
 }
 
 .movie-section {
@@ -259,3 +262,87 @@ margin-left: 90px;
     text-align: justify;
     font-size: 5;
 }
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    .image-box {
+        width:30%;
+        height:35%;
+     
+        margin:10px;
+        display: flex;
+        justify-content: center;
+
+    }
+    .rating-circle {
+        position: relative;
+        width: 40px; /* Ajusta el tamaño del círculo según tus preferencias */
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        fill: none;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: rgb(255, 255, 255); /* Color del texto dentro del círculo */
+        border: 3px solid #eedf0f; /* Color del borde del círculo */
+        box-sizing: border-box;
+        overflow: hidden;
+        top: -35px;
+      }
+      
+    .t-pelicula {
+        font-size: 28px; /* Tamaño de fuente más pequeño para el nombre de la película */
+       top: -15px;
+        margin-top: 10px;
+    }
+
+    .sinopsis {
+        max-width: 100%; 
+        text-align: justify;
+    margin: 15x; /* Añade un poco de espacio alrededor de la sinopsis */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+   
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 100; /* Ajusta el número de líneas que deseas mostrar */
+    max-width: 270px;
+    top: -40px;
+ }
+
+    .director, .actores {
+        top: -40px;
+        text-align: center;
+        margin-left: 35px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 100; /* Ajusta el número de líneas que deseas mostrar */
+        max-width: 400px;
+    
+        margin:px; /* Añade un poco de espacio alrededor del director y actores */
+    }
+
+    .video {
+        display: none;
+        width: 80%; /* Ocupa todo el ancho disponible */
+        margin: 10px; /* Añade un poco de espacio alrededor del reproductor */
+    }
+    .video-cel
+     {
+      
+        position: relative;
+        top: 10px;
+   
+    display: block;
+    }
+    .main-content {
+       
+        display: none;
+    }
+    /* ... (otros estilos específicos para pantallas pequeñas) ... */
+}
+
+/* ... (estilos existentes) ... */
